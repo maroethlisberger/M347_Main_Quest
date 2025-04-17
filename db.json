@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "name": "Lindsay Walton",
+      "title": "Front-end Developer",
+      "email": "lindsay.walton@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "John Doe",
+      "title": "Back-end Developer",
+      "email": "john.doe@example.com",
+      "role": "Admin"
+    },
+    {
+      "name": "Jane Smith",
+      "title": "UX/UI Designer",
+      "email": "jane.smith@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Alice Johnson",
+      "title": "Product Manager",
+      "email": "alice.johnson@example.com",
+      "role": "Manager"
+    },
+    {
+      "name": "Bob Brown",
+      "title": "Software Engineer",
+      "email": "bob.brown@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Emily Davis",
+      "title": "Marketing Specialist",
+      "email": "emily.davis@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Michael Miller",
+      "title": "DevOps Engineer",
+      "email": "michael.miller@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Sarah Wilson",
+      "title": "Data Scientist",
+      "email": "sarah.wilson@example.com",
+      "role": "Admin"
+    },
+    {
+      "name": "David Taylor",
+      "title": "Project Manager",
+      "email": "david.taylor@example.com",
+      "role": "Manager"
+    },
+    {
+      "name": "Olivia Anderson",
+      "title": "QA Engineer",
+      "email": "olivia.anderson@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Ethan Thomas",
+      "title": "Product Designer",
+      "email": "ethan.thomas@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Grace Martinez",
+      "title": "Full-stack Developer",
+      "email": "grace.martinez@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Lucas Lee",
+      "title": "Business Analyst",
+      "email": "lucas.lee@example.com",
+      "role": "Manager"
+    },
+    {
+      "name": "Sophia Clark",
+      "title": "Content Writer",
+      "email": "sophia.clark@example.com",
+      "role": "Member"
+    },
+    {
+      "name": "Daniel Harris",
+      "title": "Network Engineer",
+      "email": "daniel.harris@example.com",
+      "role": "Member"
+    }
+  ]
+}
