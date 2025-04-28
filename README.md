@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# M347 Main Quest 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Willkommen zur Main Quest 1 für das Modul M347!  
+In dieser Aufgabe richtest du eine React-Applikation inklusive Backend mit Docker ein.
 
-## Available Scripts
+## Schritte
 
-In the project directory, you can run:
+### 1. Repository klonen
+```bash
+git clone https://github.com/maroethlisberger/M347_Main_Quest.git
+```
 
-### `npm start`
+### 2. Abhängigkeiten installieren
+```bash
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 3. Backend vorbereiten
+- Erstelle ein `docker-compose.yml`
+- Binde das `Dockerfile-json-server` als Service ein
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 4. Backend starten
+```bash
+docker compose up --build --force-recreate
+```
 
-### `npm test`
+### 5. Backend testen
+Überprüfe, ob der GET-Endpoint korrekt funktioniert:
+http://localhost:8080/users
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 6. Frontend (React) vorbereiten
+Erstelle ein eigenes `Dockerfile` für die React-Applikation
 
-### `npm run build`
+### 7. Frontend-Service integrieren
+Binde den React-Service ebenfalls in das `docker-compose.yml` ein
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 8. Frontend starten und testen
+Starte die Applikation erneut und prüfe, ob alle User korrekt im Frontend angezeigt werden: http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 9. Hot-Reload aktivieren
+Passe das `docker-compose.yml` an, sodass ein Hot-Reload möglich ist. \
+`Hinweis:` Binde den Source-Code als Volume im `docker-compose.yml` ein.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Weitere Tipps
+- Achte auf die korrekte Zuordnung der Ports
+- Für Hot-Reload empfiehlt sich die Nutzung von Volumes in Docker
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Ziel
+Nach Abschluss dieser Aufgabe hast du:
+- Ein vollständiges Setup von Backend und Frontend in Docker.
+- Erfahrung im Erstellen von Dockerfiles und der Nutzung von docker-compose.
+- Eine Entwicklungsumgebung mit funktionierendem Hot-Reload.
